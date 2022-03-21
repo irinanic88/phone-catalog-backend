@@ -1,0 +1,23 @@
+{
+  "name": "phone-catalog-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irinanic88/phone-catalog-backend.git"
+  },
+  "author": "Irina Nicolai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irinanic88/phone-catalog-backend/issues"
+  },
+  "homepage": "https://github.com/irinanic88/phone-catalog-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  }
+}
