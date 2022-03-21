@@ -7,7 +7,7 @@ exports.flattenProductList = (data) => {
         imageURL: product.imageURL
     }));
 
-    return JSON.stringify(productsList);
+    return productsList;
 }
 
 exports.getProductById = (data, id) => {
