@@ -2,8 +2,10 @@ const express = require('express');
 const fs = require('fs');
 const cors = require('cors');
 const utils = require('./utils');
+const variables = require('./variables');
 
 const { flattenProductList, getProductById } = utils;
+const { port } = variables;
 
 const app = express();
 
@@ -26,4 +28,4 @@ app.get('/products/:id', (req, res) => {
 
 });
 
-app.listen(8080);
+app.listen(port);
