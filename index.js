@@ -6,6 +6,7 @@ const variables = require('./variables');
 
 
 const { port } = variables;
+const { flattenProductList, getProductById } = utils;
 
 const app = express();
 
