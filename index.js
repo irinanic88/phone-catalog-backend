@@ -24,6 +24,13 @@ app.get('/products/:id', (req, res) => {
 
     fs.readFile('./data/products.json', 'utf8', (err, data) => {
         res.setHeader('Content-Type', 'application/json');
+
+        const foundProduct = getProductById(data, requestedId);
+
+        if (!foundProduct) {
+            res.status('404').end(`Product doesn't exist`);
+        }
+
         res.send(getProductById(data, requestedId));
     })
 
